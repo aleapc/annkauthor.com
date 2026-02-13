@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ann K. (Ann Katherine Keller) is the author of The Rooms Trilogy, literary fiction exploring identity, domestic architecture, and the moral weight of presence.">
+  <title>Ann K. | Author of The Rooms Trilogy</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Single-page simplified styles */
+    :root {
+      --color-bg: #FAFAF8;
+      --color-bg-alt: #F4F3F0;
+      --color-text: #2C2C2C;
+      --color-text-muted: #5A5A5A;
+      --color-text-light: #7A7A7A;
+      --color-border: #E0DED8;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header */
+    header {
+      padding: 6rem 0 4rem;
+      text-align: center;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    header img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      filter: grayscale(20%);
+      margin-bottom: 2rem;
+    }
+
+    .placeholder-photo {
+      width: 200px;
+      height: 250px;
+      background: var(--color-border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      color: var(--color-text-light);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: var(--color-text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--color-text-muted);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+
+    blockquote {
+      padding: 1.5rem;
+      background: var(--color-bg-alt);
+      border-left: 2px solid var(--color-border);
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: var(--color-text-muted);
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      color: var(--color-text);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--color-text-muted);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Books */
+    .book {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .book:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .book h3 {
+      font-family: var(--font-serif);
+      font-size: 1.375rem;
+      font-weight: 400;
+      margin-bottom: 0.25rem;
+    }
+
+    .book-series {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+      margin-bottom: 1rem;
+    }
+
+    .book-themes {
+      font-size: 0.875rem;
+      font-style: italic;
+      color: var(--color-text-light);
+      margin-top: 1rem;
+    }
+
+    /* Themes */
+    .theme {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: var(--color-bg-alt);
+      border-left: 2px solid var(--color-border);
+    }
+
+    .theme h4 {
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+    }
+
+    .theme p {
+      font-size: 0.9375rem;
+      margin: 0;
+    }
+
+    /* Press Bio */
+    .press-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+      margin-bottom: 1rem;
+    }
+
+    /* Contact */
+    .contact-email {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .contact-email a {
+      color: var(--color-text);
+    }
+
+    .contact-note {
+      font-size: 0.875rem;
+      color: var(--color-text-light);
+    }
+
+    /* Footer */
+    footer {
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.8125rem;
+      color: var(--color-text-light);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header { padding: 4rem 0 3rem; }
+      h1 { font-size: 2rem; }
+      section { padding: 3rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <!-- Replace with actual author photo -->
+      <img src="author-photo.jpg" alt="Ann K." onerror="this.outerHTML='<div class=placeholder-photo>Author Photo</div>'">
+      <h1>Ann Katherine Keller</h1>
+      <p class="subtitle">Writing as Ann K.</p>
+      <p class="tagline">Fiction that maps the architecture of domestic life and the quiet weight of decisions unmade.</p>
+      <blockquote>
+        "The house itself was a museum of intentions&mdash;things bought, things started, things prepared for, things that had not arrived and whose absence had been absorbed into the collection."
+      </blockquote>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section>
+    <div class="container">
+      <h2>About</h2>
+      <p>Ann Katherine Keller writes fiction concerned with the spaces between intention and action, the domestic arrangements that shape interior lives, and the moral architecture of ordinary decisions. Her work examines how identity is constructed through position&mdash;where we stand in relation to the structures, families, and systems we inherit or choose to enter.</p>
+      <p>Born and raised in Texas, Keller developed an early attentiveness to the unspoken negotiations of family life in conservative America. Before turning to fiction, she worked as a journalist in the Midwest, covering municipal governance and housing policy. The investigative discipline of that work remains visible in her fiction, which treats domestic spaces with the same rigor a reporter might apply to public institutions.</p>
+      <p>Her writing has been shaped by an interest in what she calls "the grammar of houses"&mdash;the way families develop syntaxes of movement, gesture, and silence that are passed down without instruction. Her narrators observe more than they act, catalog more than they confront. They are fluent in other people's structures, capable of making themselves useful in households not their own. This positioning is both gift and limitation.</p>
+    </div>
+  </section>
+
+  <!-- Books -->
+  <section>
+    <div class="container">
+      <h2>The Rooms Trilogy</h2>
+
+      <div class="book">
+        <p class="book-series">Book One</p>
+        <h3>First Rooms</h3>
+        <p>Anna is eighteen and preparing to leave the only house she has known. In the final days before departure, she observes her family with the precision of someone cataloging a system she is about to exit. Later, at college, she finds herself drawn to another family whose ordered household offers the stability her own never quite provided. But the boundary between observer and participant proves more permeable than she anticipated.</p>
+        <p class="book-themes">Inherited patterns, observation as distance, the grammar of domestic arrangement.</p>
+      </div>
+
+      <div class="book">
+        <p class="book-series">Book Two</p>
+        <h3>Rooms Between</h3>
+        <p>Ann returns to Austin. The stated reason is professional&mdash;a contract position at a newspaper&mdash;but the return is also a response to her father's declining health. Working between the newsroom's forward momentum and the house's circular routines, Ann occupies transitional space: present at both locations, fully at home in neither. As her father's condition worsens, she confronts the question that has shaped her life&mdash;which room should she be in, and what is owed to the rooms she isn't?</p>
+        <p class="book-themes">Caregiving and presence, journalism as structure, guilt and responsibility.</p>
+      </div>
+
+      <div class="book" style="opacity: 0.7;">
+        <p class="book-series">Book Three (Forthcoming)</p>
+        <h3>My Room</h3>
+        <p>The concluding volume. After a lifetime of mapping other people's structures, the narrator confronts the project she has always deferred: constructing a room of her own.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Themes -->
+  <section>
+    <div class="container">
+      <h2>Themes</h2>
+
+      <div class="theme">
+        <h4>Identity Construction</h4>
+        <p>Identity is less discovered than assembled&mdash;through the positions we occupy, the structures we enter, the patterns we inherit without choosing.</p>
+      </div>
+
+      <div class="theme">
+        <h4>Responsibility vs. Victimhood</h4>
+        <p>Her narrators occupy an unsettling middle ground: people who observe clearly, who understand the systems they inhabit, who make choices through positioning rather than action.</p>
+      </div>
+
+      <div class="theme">
+        <h4>Moral Decision-Making</h4>
+        <p>The moral life is not a matter of dramatic choice but of accumulated presence. Where we stand, what we attend to&mdash;these become the ethical substance of a life.</p>
+      </div>
+
+      <div class="theme">
+        <h4>Silent Internal Conflict</h4>
+        <p>The drama exists beneath the surface&mdash;in the accumulation of awareness, the recognition of patterns that will not be named aloud.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press Bio -->
+  <section>
+    <div class="container">
+      <h2>Press Bio</h2>
+      <p class="press-label">For media use</p>
+      <p>Ann K. is the author of The Rooms Trilogy, a work of literary fiction examining domestic space as psychological architecture. A former journalist based in the American Midwest, she brings an investigative sensibility to the interior lives of her characters. Her fiction explores inherited patterns, the moral weight of presence and absence, and the quiet decisions that accumulate into identity. Born and raised in Texas, she writes prose that is observational, restrained, and psychologically precise. The Rooms Trilogy is her first published work.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <div class="container">
+      <h2>Contact</h2>
+      <p>For press inquiries, rights and permissions, or professional correspondence.</p>
+      <p class="contact-email"><a href="mailto:contact@annkauthor.com">contact@annkauthor.com</a></p>
+      <p class="contact-note">Please allow time for response.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ann Katherine Keller. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
