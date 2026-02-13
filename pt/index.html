@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
 </head>
 <body>
 
@@ -24,19 +25,22 @@
         <li><a href="#themes">Temas</a></li>
         <li><a href="#contact">Contato</a></li>
         <li class="nav__lang">
-          <select onchange="window.location.href=this.value">
-            <option value="../pt/">🇧🇷 PT</option>
-            <option value="../">🇺🇸 EN</option>
-            <option value="../fr/">🇫🇷 FR</option>
-            <option value="../de/">🇩🇪 DE</option>
-            <option value="../es/">🇪🇸 ES</option>
-            <option value="../it/">🇮🇹 IT</option>
-            <option value="../ja/">🇯🇵 JA</option>
-            <option value="../zh/">🇨🇳 ZH</option>
-            <option value="../ko/">🇰🇷 KO</option>
-            <option value="../nl/">🇳🇱 NL</option>
-            <option value="../pl/">🇵🇱 PL</option>
-          </select>
+          <div class="lang-dropdown">
+            <button class="lang-current"><span class="fi fi-br"></span> PT</button>
+            <div class="lang-options">
+              <a href="../"><span class="fi fi-us"></span> EN</a>
+              <a href="../fr/"><span class="fi fi-fr"></span> FR</a>
+              <a href="../de/"><span class="fi fi-de"></span> DE</a>
+              <a href="../pt/"><span class="fi fi-br"></span> PT</a>
+              <a href="../es/"><span class="fi fi-es"></span> ES</a>
+              <a href="../it/"><span class="fi fi-it"></span> IT</a>
+              <a href="../ja/"><span class="fi fi-jp"></span> JA</a>
+              <a href="../zh/"><span class="fi fi-cn"></span> ZH</a>
+              <a href="../ko/"><span class="fi fi-kr"></span> KO</a>
+              <a href="../nl/"><span class="fi fi-nl"></span> NL</a>
+              <a href="../pl/"><span class="fi fi-pl"></span> PL</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
